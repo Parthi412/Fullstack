@@ -1,0 +1,161 @@
+/* Common styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mySwiper {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.hot1 {
+  padding: 6px 12px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Layout for cards */
+.lap {
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.lap:hover {
+  transform: translateY(-5px);
+}
+
+/* Images for product cards */
+.lap img {
+  margin: 0 auto;
+  display: block;
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Titles */
+.lap h1 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+
+/* Buttons */
+.lap .btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Price */
+.lap h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Adjust hot sale tag */
+.lap .hot {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 10;
+}
+
+/* Responsive Grid */
+@media screen and (max-width: 1200px) {
+  .lap img {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .lap {
+    text-align: center;
+  }
+
+  .lap img {
+    height: 250px;
+    width: 90%;
+  }
+
+  .lap h1 {
+    font-size: 22px;
+  }
+
+  .lap h4 {
+    font-size: 18px;
+  }
+
+  .lap .btn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-6 {
+    width: 100% !important;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .lap img {
+    height: 220px;
+  }
+
+  .lap h1 {
+    font-size: 20px;
+  }
+
+  .lap h4 {
+    font-size: 17px;
+  }
+
+  .lap .btn {
+    font-size: 14px;
+  }
+
+  .hot1 {
+    width: auto;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .lap img {
+    height: 180px;
+  }
+
+  .lap h1 {
+    font-size: 18px;
+  }
+
+  .lap h4 {
+    font-size: 16px;
+  }
+
+  .lap .btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .hot1{
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}

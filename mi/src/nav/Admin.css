@@ -1,0 +1,14 @@
+.jt {
+    color: white;
+    border: 2px solid rgb(19, 18, 18);
+    padding: 35.2px;
+    text-decoration: none;
+}
+.jt:hover{
+    background-color: white;
+    color: black;
+}
+.co{
+    margin-top: 50px;
+}
+
