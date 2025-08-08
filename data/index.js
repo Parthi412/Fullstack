@@ -60,7 +60,7 @@ app.delete("/delte/:id",async(req,res)=>{
 app.post("/mobile",async(req,res)=>{
 const data=req.body
 const result= await moblie.insertOne(data)
-res.send(result)
+res.send(result) 
 })
 //get the all the mobile
 app.get("/allmobile",async(req,res)=>{
